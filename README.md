@@ -16,14 +16,14 @@ Installation
 
 2. Require the library
 
-```
+```ruby
 require 'diffbot/base'
 ```
 
 
 3. Setup the configuration and make sure it is loaded when the application is loaded
 
-```
+```ruby
 Diffbot::Base.configure do |config|
   config.token = '<developer-token-provided-by-diffbot.com>'
 end
@@ -33,16 +33,17 @@ end
 Usage
 =====
 
-```
+```ruby
 Diffbot::Article.extract(url, options = {})
 ```
 
-  where,
-    url     =>  Article URL to process
-    options =>  An hash to specify optional parameters accepted by the Article API of diffbot.com. More info http://diffbot.com/products/automatic/
+where,
+*  url     =>  Article URL to process
+*  options =>  An hash to specify optional parameters accepted by the Article API of diffbot.com. More info http://diffbot.com/products/automatic/
 
-```
-eg: article_data = Diffbot::Article.extract('http://www.wired.co.uk/news/archive/2012-06/01/diffbot', fields: 'meta, icon')
+Example:
+```ruby
+article_data = Diffbot::Article.extract('http://www.wired.co.uk/news/archive/2012-06/01/diffbot', fields: 'meta, icon')
 ```
 
 The json response from the Article API is parsed using the json library and the resultant hash is returned.
