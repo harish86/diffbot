@@ -11,17 +11,18 @@ Two ruby gems are required: 'open-uri' and 'json'
 
 Installation
 ============
-1. Download this library and place it in a directory which is accessible
+
+* Download this library and place it in a directory which is accessible
 
 
-2. Require the library
+* Require the library
 
 ```ruby
 require 'diffbot/base'
 ```
 
 
-3. Setup the configuration and make sure it is loaded when the application is loaded
+* Setup the configuration and make sure it is loaded when the application is loaded
 
 ```ruby
 Diffbot::Base.configure do |config|
@@ -50,4 +51,7 @@ The json response from the Article API is parsed using the json library and the 
 
 
 
-NOTE: This library currently includes methods to access only the article API provided by diffbot.com. Access to other APIs are yet to be implemented.
+**NOTE: This library currently includes methods to access only the article API provided by diffbot.com. Access to other APIs are yet to be implemented.**
+
+--
+Copyright (c) 2014 [Harish Premkumar].
