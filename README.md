@@ -6,7 +6,7 @@ Diffbot, a ruby library to access APIs provided by diffbot.com
 
 Requirements
 ============
-Diffbot ruby library requires two ruby gems, 'open-uri' and 'json'
+Two ruby gems are required: 'open-uri' and 'json'
 
 
 Installation
@@ -30,7 +30,8 @@ end
 ```
 
 
-4. Usage
+Usage
+=====
 
 ```
 Diffbot::Article.extract(url, options = {})
